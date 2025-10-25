@@ -1,5 +1,5 @@
 [project]
-name = "image_properties_sg"
+name = "ComfyUI-Image_Properties_SG"
 description = "View general image properties of image: Dimension, Resolution, Aspect Ratio, Tensor Size (including batch)"
 version = "1.0.0"
 license = {file = "LICENSE"} 
@@ -27,4 +27,5 @@ PublisherId = "shammi-g"
 DisplayName = "ComfyUI-Image_Properties_SG"
 Icon = ""
 # "requires-comfyui" = ">=1.0.0"  # ComfyUI version compatibility
+
 
