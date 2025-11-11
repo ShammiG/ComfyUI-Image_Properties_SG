@@ -17,7 +17,7 @@ View general image properties of image: Dimension, Resolution, Aspect Ratio, Ten
 
 **New Node : Save Image Format Quality Properties**     
 <br>
-This new node when connected to VAE decode output displays all the same info as Load Image and View Properties. So display info depends upon where it is added in workflow.  
+This new node, when connected to VAE decode output, displays all the same info as Load Image and View Properties including Model, Seed, Steps, CFG, Sampler, Scheduler used. So display info depends upon where it is added in workflow.  
 
 **This node also has various output formats and their quality and compression options, so you can save image as : PNG, JPEG, WEBP, BMP, TIFF**
 
