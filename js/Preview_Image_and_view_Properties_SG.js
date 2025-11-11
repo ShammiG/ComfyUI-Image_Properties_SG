@@ -18,6 +18,22 @@ app.registerExtension({
                 
                 return result;
             };
+
+            const onConfigure = nodeType.prototype.onConfigure;
+                nodeType.prototype.onConfigure = function(info) {
+                    onConfigure?.apply(this, arguments);
+                    if (info.imageParamsText) {
+                        this.imageParamsText = info.imageParamsText;
+    }
+};
+                const onSerialize = nodeType.prototype.onSerialize;
+                nodeType.prototype.onSerialize = function(info) {
+                    const data = onSerialize ? onSerialize.apply(this, arguments) : info;
+                    if (this.imageParamsText) {
+                        data.imageParamsText = this.imageParamsText;
+                    }
+                    return data;
+};
             
             const onExecuted = nodeType.prototype.onExecuted;
             nodeType.prototype.onExecuted = function (message) {
@@ -25,10 +41,7 @@ app.registerExtension({
                 
                 if (message.text) {
                     this.imageParamsText = message.text;
-                    // Only adjust height, not width
-                    const baseHeight = this.computeSize()[1];
-                    const textHeight = 65;
-                    this.size[1] = Math.max(baseHeight + textHeight, 250);
+
                 }
             };
             
@@ -43,7 +56,7 @@ app.registerExtension({
                     const textX = 10;
                     const lineHeight = 18;
                     // Position text at top
-                    const startY = 65;
+                    const startY = 55;
                     
                     // Draw each line
                     this.imageParamsText.forEach((line, index) => {

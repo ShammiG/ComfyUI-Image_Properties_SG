@@ -18,6 +18,22 @@ app.registerExtension({
                 
                 return result;
             };
+
+            const onConfigure = nodeType.prototype.onConfigure;
+                nodeType.prototype.onConfigure = function(info) {
+                    onConfigure?.apply(this, arguments);
+                    if (info.imageParamsText) {
+                        this.imageParamsText = info.imageParamsText;
+    }
+};
+                const onSerialize = nodeType.prototype.onSerialize;
+                nodeType.prototype.onSerialize = function(info) {
+                    const data = onSerialize ? onSerialize.apply(this, arguments) : info;
+                    if (this.imageParamsText) {
+                        data.imageParamsText = this.imageParamsText;
+                    }
+                    return data;
+};
             
             const onExecuted = nodeType.prototype.onExecuted;
             
