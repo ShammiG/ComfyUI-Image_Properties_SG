@@ -2,19 +2,52 @@
 View general image properties of image: Dimension, Resolution, Aspect Ratio, Tensor Size (including batch)    
 <br>
 
-**Three nodes for three different purposes:**                 
+**Four nodes for four different purposes:**                 
             
 **1. Load Image and View properties:**            
                  
 **2. Preview Image and View properties:**              
                
-**3. Passthrough node to view Image Properties**          
+**3. Passthrough node to view Image Properties**         
+
+**4. Save Image Format Quality Properties**
+<br>
+<br>
+# Update : New Node, annoying bugs fixed and missing features added     
+
+**New Node : Save Image Format Quality Properties**     
+<br>
+This new node when connected to VAE decode output displays all the same info as Load Image and View Properties. So display info depends upon where it is added in workflow.  
+
+**This node also has various output formats and their quality and compression options, so you can save image as : PNG, JPEG, WEBP, BMP, TIFF**
+
+*❗DO take a note that only PNG supports saving comfyUI workflow and image metadata*           
+<br>
+      
+https://github.com/user-attachments/assets/1b5a2315-0027-4ef7-8b3b-36ea94166329
+
+<br>
 <br>
 
-**1. Load Image and View properties:** Load image (both upload or drag and drop) and **without running workflow** view image properties directly 
+# Bug Fixes and missing features added:
+**1. Load Image and View properties now also displays : Model, Seed, Steps, CFG, Sampler, Scheduler used (check attached gif)**       
+But the additional info can only be displayed while running/executing single node or while running workflow
+
+**2.** Added mask edit and output to Load Image and View Properties node (didn't realize it was missing until I had a use for it, Oops!)
+
+**3.** Fixed properties info not retaining while switching workflows.         
+
+**4.** removed the annoying node auto resize bug everytime running the workflow instead of staying custom size
+<br>
 <br>
 
-![load image and view properties](https://github.com/user-attachments/assets/d15639b2-4082-48b5-8998-0d92a80f43e1)
+**1. Load Image and View properties:** Load image (both upload or drag and drop) and **without running workflow** view image properties directly      
+You can view Image Dimensions, Resolution in MP, aspect ratio, Tensor Size.         
+If you execute this single node or run workflow now you can also view: Model, Seed, Steps, CFG, Sampler, Scheduler used (check attached gif)      
+<br>
+
+![Load image and view properties updated](https://github.com/user-attachments/assets/8cc970f5-c836-4845-a8bf-b5afdfa64108)
+
 <br>
 <br>
 
