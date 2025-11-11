@@ -1,5 +1,6 @@
 # ComfyUI Image Properties SG
-View general image properties of image: Dimension, Resolution, Aspect Ratio, Tensor Size (including batch)    
+View general image properties of image: Dimension, Resolution, Aspect Ratio, Tensor Size (including batch)        
+Also basic Metadata like: Model, Seed, Steps, CFG, Sampler, Scheduler
 <br>
 
 **Four nodes for four different purposes:**                 
