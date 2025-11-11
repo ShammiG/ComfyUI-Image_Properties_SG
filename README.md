@@ -100,9 +100,13 @@ If you execute this single node or run workflow now you can also view: Model, Se
 <br>
 
 
+
+# Appreciate and support my work on [Patreon](https://www.patreon.com/c/ShammiG)
+<br>
+<br>
+
 **This was made possible with the help of Perplexity Pro : Claude 4.5 Sonet**      
    Big Shoutout to them.
-
 
 
 
