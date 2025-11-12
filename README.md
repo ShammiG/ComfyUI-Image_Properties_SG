@@ -31,14 +31,14 @@ https://github.com/user-attachments/assets/1b5a2315-0027-4ef7-8b3b-36ea94166329
 <br>
 
 # Bug Fixes and missing features added:
-**1. Load Image and View properties now also displays : Model, Seed, Steps, CFG, Sampler, Scheduler used (check attached gif)**       
+● **Load Image and View properties now also displays : Model, Seed, Steps, CFG, Sampler, Scheduler used (check attached gif)**       
 But the additional info can only be displayed while running/executing single node or while running workflow
 
-**2.** Added mask edit and output to Load Image and View Properties node (didn't realize it was missing until I had a use for it, Oops!)
+ ● Added mask edit and output to Load Image and View Properties node (didn't realize it was missing until I had a use for it, Oops!)
 
-**3.** Fixed properties info not retaining while switching workflows.         
+ ● Fixed properties info not retaining while switching workflows.         
 
-**4.** removed the annoying node auto resize bug everytime running the workflow instead of staying custom size
+ ● removed the annoying node auto resize bug everytime running the workflow instead of staying custom size
 <br>
 <br>
 
@@ -47,7 +47,8 @@ You can view Image Dimensions, Resolution in MP, aspect ratio, Tensor Size.
 If you execute this single node or run workflow now you can also view: Model, Seed, Steps, CFG, Sampler, Scheduler used (check attached gif)      
 <br>
 
-![Load image and view properties updated](https://github.com/user-attachments/assets/8cc970f5-c836-4845-a8bf-b5afdfa64108)
+![Load Image And View Properties](https://github.com/user-attachments/assets/06c2e3bd-3f58-4688-ab87-67c6b5c83b40)
+
 
 <br>
 <br>
