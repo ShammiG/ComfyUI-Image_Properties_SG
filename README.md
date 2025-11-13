@@ -25,7 +25,9 @@ This new node, when connected to VAE decode output, displays all the same info a
 *❗DO take a note that only PNG supports saving comfyUI workflow and image metadata*           
 <br>
       
-https://github.com/user-attachments/assets/1b5a2315-0027-4ef7-8b3b-36ea94166329
+
+https://github.com/user-attachments/assets/767710c8-7558-4d37-ad00-84c0076f5c26
+
 
 <br>
 <br>
