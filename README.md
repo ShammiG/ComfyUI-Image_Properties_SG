@@ -33,6 +33,8 @@ https://github.com/user-attachments/assets/767710c8-7558-4d37-ad00-84c0076f5c26
 <br>
 
 # Bug Fixes and missing features added:
+● Critical Bug fixed where Save Image Node was not saving workflow and Json even in PNG format!           
+       
 ● **Load Image and View properties now also displays : Model, Seed, Steps, CFG, Sampler, Scheduler used (check attached gif)**       
 But the additional info can only be displayed while running/executing single node or while running workflow
 
