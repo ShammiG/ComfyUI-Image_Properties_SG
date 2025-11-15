@@ -78,7 +78,7 @@ If you execute this single node or run workflow now you can also view: Model, Se
         
 **1.** Click on Manager>Custom Nodes Manager           
             
-**2.** you can directly search ComfyUI-Image_Properties_SG and click install.           
+**2.** you can directly search ComfyUI-Image_Properties_SG or my Username ShammiG and click install.           
               
 **3.** Restart comfyUI from manager:     
 <br> 
