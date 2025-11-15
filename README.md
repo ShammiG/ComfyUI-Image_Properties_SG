@@ -80,7 +80,7 @@ If you execute this single node or run workflow now you can also view: Model, Se
             
 **2.** you can directly search ComfyUI-Image_Properties_SG and click install.           
               
-**3.** Restart comfyUI from manager and you will see this message in console:     
+**3.** Restart comfyUI from manager:     
 <br> 
 
 **OPTION 2 :** If you don't have comfyUI Manager installed:           
@@ -89,7 +89,7 @@ If you execute this single node or run workflow now you can also view: Model, Se
        
 **2.** Clone this repository into your **ComfyUI/custom_nodes** directory:    
        
-    git clone https://github.com/ShammiG/ComfyUI-Image_Properties_SG.git  
+    git clone https://github.com/ShammiG/ComfyUI-Simple_Readable_Metadata-SG.git
       
 **3.** **Restart ComfyUI**             
   Search and add the desired node to your workflow.
