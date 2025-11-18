@@ -14,7 +14,7 @@ Also basic Metadata like: Model, Seed, Steps, CFG, Sampler, Scheduler
 **4. Save Image Format Quality Properties**
 <br>
 <br>
-# Update : New Node, annoying bugs fixed and missing features added     
+# Update : New Node, annoying bugs fixed and missing features added    
 
 **New Node : Save Image Format Quality Properties**     
 <br>
@@ -25,6 +25,7 @@ This new node, when connected to VAE decode output, displays all the same info a
 *❗DO take a note that only PNG supports saving comfyUI workflow and image metadata*           
 <br>
       
+# Details:
 
 https://github.com/user-attachments/assets/767710c8-7558-4d37-ad00-84c0076f5c26
 
