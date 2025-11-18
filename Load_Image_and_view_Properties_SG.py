@@ -220,10 +220,14 @@ class LoadImageandviewPropertiesSG:
         # Calculate resolution in megapixels
         total_pixels = width * height
         resolution_mp = float(total_pixels / 1_000_000)
-        
-        # Calculate image size in MB (uncompressed in memory)
-        size_bytes = width * height * channels * 4 * batch_size
-        size_mb = float(size_bytes / (1024 * 1024))
+             
+        # Get actual file 
+        try:
+            file_size_bytes = os.path.getsize(image_path)
+            file_size_mb = float(file_size_bytes) / (1024 * 1024)
+        except:
+            file_size_mb = 0.0
+
         
         # GCD calculation for aspect ratio
         def gcd(a, b):
@@ -269,12 +273,8 @@ class LoadImageandviewPropertiesSG:
         else:
             line2 = f"Ratio: {int(width_ratio)}:{int(height_ratio)} or {aspect_ratio_decimal:.2f}:1"
         
-        if batch_size > 1:
-            total_size_mb = size_mb * batch_size
-            line3 = f"Batch: {batch_size} images | Total Tensor: {total_size_mb:.2f}MB"
-        else:
-            line3 = f"Tensor Size: {size_mb:.2f}MB"
-        
+        line3 = f"File Size: {file_size_mb:.2f}MB"
+    
         # Add metadata lines
         line4 = f"Model: {model_name}"
         line5 = f"Seed: {gen_params['seed']} | Steps: {gen_params['steps']} | CFG: {gen_params['cfg']}"
