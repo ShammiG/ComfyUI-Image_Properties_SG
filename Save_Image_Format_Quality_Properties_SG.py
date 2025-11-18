@@ -149,8 +149,13 @@ class SaveImageFormatQualityPropertiesSG:
         batch_size, height, width, channels = image_tensor.shape
         total_pixels = width * height
         resolution_mp = float(total_pixels / 1_000_000)
-        size_bytes = width * height * channels * 4 * batch_size
-        size_mb = float(size_bytes / (1024 * 1024))
+
+        # Get actual file 
+        try:
+            file_size_bytes = os.path.getsize(image_path)
+            file_size_mb = float(file_size_bytes) / (1024 * 1024)
+        except:
+            file_size_mb = 0.0
 
         def gcd(a, b):
             while b:
@@ -188,14 +193,14 @@ class SaveImageFormatQualityPropertiesSG:
             line2 = f"Ratio: {int(width_ratio)}:{int(height_ratio)} or {aspect_ratio_decimal:.2f}:1 or ~{closest_standard}"
         else:
             line2 = f"Ratio: {int(width_ratio)}:{int(height_ratio)} or {aspect_ratio_decimal:.2f}:1"
-        if batch_size > 1:
-            total_size_mb = size_mb * batch_size
-            line3 = f"Batch: {batch_size} images | Total Tensor: {total_size_mb:.2f}MB"
-        else:
-            line3 = f"Tensor Size: {size_mb:.2f}MB"
+
+        line3 = f"File Size: {file_size_mb:.2f}MB"
+
+
         line4 = f"Model: {model_name}"
         line5 = f"Seed: {gen_params['seed']} | Steps: {gen_params['steps']} | CFG: {gen_params['cfg']}"
         line6 = f"Sampler: {gen_params['sampler']} | Scheduler: {gen_params['scheduler']}"
+        
         if Properties == "None":
             display_lines = []
         elif Properties == "Basic":
