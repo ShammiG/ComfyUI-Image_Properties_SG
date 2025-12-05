@@ -3,6 +3,20 @@ View general image properties of image: Dimension, Resolution, Aspect Ratio, Ten
 Also basic Metadata like: Model, Seed, Steps, CFG, Sampler, Scheduler
 <br>
 
+#    ❗Attention❗
+**Switch Node 2.0 OFF, If comfyUI version 0.3.76 or newer**
+<br>
+
+![dsf](https://github.com/user-attachments/assets/126e2de6-9181-435e-b7f1-d0ecd849ada4)
+
+**Reason:** With new ComfyUI update it changed the frontend from Lite graph rendering to Vue with **nodes 2.0**.         
+&emsp;&emsp;&emsp; &nbsp; So, now it requires rewriting and troubleshooting with about 2000 lines of code!      
+&emsp;&emsp;&emsp; &nbsp; which i am not currently leaned towards into.
+
+---
+ ComfyUI Image Properties SGs Nodes Info
+---
+
 **Four nodes for four different purposes:**                 
             
 **1. Load Image and View properties:**            
