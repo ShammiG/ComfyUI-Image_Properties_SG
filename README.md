@@ -104,7 +104,7 @@ If you execute this single node or run workflow now you can also view: Model, Se
        
 **2.** Clone this repository into your **ComfyUI/custom_nodes** directory:    
        
-    git clone https://github.com/ShammiG/ComfyUI-Simple_Readable_Metadata-SG.git
+    git clone https://github.com/ShammiG/ComfyUI-Image_Properties_SG
       
 **3.** **Restart ComfyUI**             
   Search and add the desired node to your workflow.
